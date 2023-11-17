@@ -1,0 +1,13 @@
+server:
+  port: 8013
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        #开启服务注册与发现功能
+        enabled: true
+        #服务注册与发现地址
+        server-addr: 127.0.0.1:8848
+  application:
+    name: springcloud-alibaba-feign-provider

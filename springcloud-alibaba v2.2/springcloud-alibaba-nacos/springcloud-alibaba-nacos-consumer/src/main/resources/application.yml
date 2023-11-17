@@ -1,0 +1,17 @@
+server:
+  port: 8710
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+  application:
+    name: springcloud-alibaba-nacos-consumer
+
+#给某个微服务配置负载均衡规则(无提示) 服务管理→服务列表→服务名→点击列表中服务的'详情'按钮→选择《集群:DEFAULT》→编辑→修改其中权重
+springcloud-alibaba-nacos-provider:
+  ribbon:
+    # 负载均衡规则 、NFLoadBalancerRuleclassName-----关键字,爽按  shift   输入  NacosRule 进class 类负载 完整路径
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+

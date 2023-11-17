@@ -1,0 +1,6 @@
+https://blog.csdn.net/m0_45256755/article/details/127533915
+
+
+下载jmeter 模拟持续访问
+
+jmter官网下载： https://jmeter.apache.org/download_jmeter.cgi

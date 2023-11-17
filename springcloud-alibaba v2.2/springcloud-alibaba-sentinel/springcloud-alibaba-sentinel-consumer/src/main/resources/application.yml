@@ -1,0 +1,16 @@
+server:
+  port: 8711
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+      #调用链路设置为展开
+      web-context-unify: false
+
+  application:
+    name: springcloud-alibaba-sentinel-consumer
